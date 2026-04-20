@@ -8,6 +8,11 @@ import java.util.HashSet;
  * Problem Statement:
  * Given an array of integers, find all duplicate elements in the array.
  * Example: Input: [1, 2, 3, 4, 2, 5, 1] Output: 2, 1 (duplicates found)
+ *
+ * Approach Used: HashSet
+ * - Use a HashSet to track seen elements
+ * - For each element, check if it's already in set (duplicate)
+ * - Time Complexity: O(n), Space Complexity: O(n)
  */
 
 public class FindDuplicatesInArray {
@@ -32,11 +37,6 @@ public class FindDuplicatesInArray {
 }
 
 /**
- * Approach Used: HashSet
- * - Use a HashSet to track seen elements
- * - For each element, check if it's already in set (duplicate)
- * - Time Complexity: O(n), Space Complexity: O(n)
- *
  * Similar Concepts & Questions:
  *
  * 1. Find First Duplicate in Array

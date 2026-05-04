@@ -1,6 +1,7 @@
 package arrayAndList;
 
 import java.util.HashSet;
+//import java.util.LinkedHashSet; - use to maintain the order of insertion
 import java.util.Set;
 
 /**
@@ -21,15 +22,15 @@ public class InterSectionOfArrays {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[] a = { 1, 2, 2, 1 };
-		int[] b = { 2, 2 };
+		int[] a = { 4, 9, 5 };
+		int[] b = { 9, 4, 9, 8, 4 };
 		intersection(a, b);
 	}
 
 	public static void intersection(int[] a, int[] b) {
 		if (a.length == 0 || b.length == 0) return;
 		Set<Integer> set = new HashSet<>();
-		Set<Integer> set1 = new HashSet<>();
+		Set<Integer> set1 = new LinkedHashSet<>();
 		for (int i = 0; i < a.length; i++) {
 			set.add(a[i]);
 		}
